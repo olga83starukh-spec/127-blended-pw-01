@@ -1,0 +1,164 @@
+/* #region Fonts */
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../css/Fonts/Gilroy-Regular.woff');
+
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../css/Fonts/Gilroy-Medium.woff');
+
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../css/Fonts/Gilroy-Semibold.woff');
+
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../css/Fonts/Gilroy-Bold.woff');
+
+  font-weight: 700;
+  font-style: normal;
+}
+/* #endregion Fonts */
+
+body {
+  font-family: 'Gilroy', sans-serif;
+  background-color: #fbfbfb;
+  color: rgba(12, 12, 12, 0.7);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* #region header */
+.header-logo {
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: -0.02em;
+  color: #0c0c0c;
+}
+
+.header-nav {
+}
+.header-nav-list {
+}
+
+.header-nav-item {
+}
+
+.header-nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  color: #0c0c0c;
+}
+.header-social-list {
+}
+.header-social-item {
+}
+/* #endregion header */
+
+/* #region hero */
+.hero {
+}
+
+.hero-title {
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 0.875;
+  letter-spacing: -0.02em;
+  color: #0c0c0c;
+}
+
+.hero-title-part {
+  color: #3350e9;
+}
+.hero-descr {
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  color: rgba(12, 12, 12, 0.7);
+}
+
+.hero-link {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #0c0c0c;
+}
+
+.hero-link:hover,
+.hero-link:focus {
+  color: #3350e9;
+}
+/* #endregion hero */
+
+/* #region catalog */
+.catalog-title {
+}
+.catalog-item {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #0c0c0c;
+}
+
+.catalog-price {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: rgba(12, 12, 12, 0.5);
+}
+
+/* #endregion catalog */
+
+/* #region sale */
+.sale {
+}
+.section {
+}
+.sale-title {
+}
+.sale-image-list {
+}
+.sale-image-list-item {
+}
+.sale-title-info {
+}
+.sale-descr-tag {
+}
+.sale-price-new {
+}
+.sale-price-old {
+}
+.sale-descr-about {
+}
+.sale-info-list {
+}
+.sale-info-item {
+}
+.sale-info-descr {
+}
+/* #endregion sale */
