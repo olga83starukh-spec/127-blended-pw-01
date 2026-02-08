@@ -32,6 +32,7 @@
 }
 /* #endregion Fonts */
 
+/* #region All Settings */
 body {
   font-family: 'Gilroy', sans-serif;
   background-color: #fbfbfb;
@@ -45,9 +46,45 @@ a {
 ul,
 ol {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* #endregion All Settings */
+
 /* #region header */
+.container {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  border-bottom: 1px solid rgba(12, 12, 12, 0.1);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .header-logo {
   font-weight: 500;
   font-size: 20px;
@@ -57,26 +94,42 @@ ol {
 
 .header-nav {
 }
+
 .header-nav-list {
+  display: flex;
 }
 
-.header-nav-item {
+.header-nav-item:not(:last-child) {
+  margin-right: 40px;
 }
 
 .header-nav-link {
+  display: block;
+  padding: 30px 0;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.29;
   color: #0c0c0c;
 }
 .header-social-list {
+  display: flex;
+  gap: 10px;
 }
+
 .header-social-item {
 }
 /* #endregion header */
 
 /* #region hero */
 .hero {
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+.hero-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
 }
 
 .hero-title {
@@ -85,6 +138,8 @@ ol {
   line-height: 0.875;
   letter-spacing: -0.02em;
   color: #0c0c0c;
+  max-width: 597px;
+  margin-bottom: 20px;
 }
 
 .hero-title-part {
@@ -95,6 +150,14 @@ ol {
   line-height: 1.25;
   letter-spacing: -0.02em;
   color: rgba(12, 12, 12, 0.7);
+  max-width: 480px;
+}
+
+.hero-link-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 .hero-link {
@@ -114,7 +177,20 @@ ol {
 /* #endregion hero */
 
 /* #region catalog */
+
 .catalog-title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 0.91667;
+  letter-spacing: -0.02em;
+  color: #0c0c0c;
+  margin-bottom: 40px;
+}
+
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px 23px;
 }
 .catalog-item {
   font-weight: 500;
@@ -122,6 +198,19 @@ ol {
   line-height: 1;
   letter-spacing: -0.02em;
   color: #0c0c0c;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-top: 10px;
+  margin-bottom: 8px;
+}
+
+.catalog-list-item {
+  border: 1px solid rgba(12, 12, 12, 0.05);
+  border-radius: 30px;
+  background-color: #f3f3f3;
+  width: calc((100% - 2 * 23px) / 3);
+  padding: 24px 32px;
 }
 
 .catalog-price {
